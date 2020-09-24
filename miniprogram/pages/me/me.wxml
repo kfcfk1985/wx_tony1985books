@@ -1,0 +1,24 @@
+<!-- miniprogram/pages/me/me.wxml -->
+<view class="user-container" hover-class="none" hover-stop-propagation="false">
+    
+    <view class="unlog-container" wx:if="{{userInfo.openid}}">
+        <image class="img-container" src="{{userInfo.avatarUrl}}" lazy-load="false" binderror="" bindload=""></image>
+        <view>
+            <text class="" selectable="false" space="false" decode="false">
+                {{userInfo.nickName}}
+            </text>
+        </view>
+    </view>
+
+ 
+    <view class="unlog-container" wx:else>
+       <image class="img-container" src="{{unLogImg}}" lazy-load="false" binderror="" bindload=""></image>
+        <view>
+            <button class="default" 
+                    type="primary" 
+                    size="mini" 
+                    open-type="getUserInfo"
+                    bindgetuserinfo="handleGetuserinfo">登陆</button>
+        </view>
+    </view>
+</view>

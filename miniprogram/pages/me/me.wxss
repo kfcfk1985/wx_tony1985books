@@ -1,0 +1,13 @@
+/* miniprogram/pages/me/me.wxss */
+
+
+.user-container{
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+
+.img-container{
+    width: 250rpx;
+    height: 250rpx;
+}

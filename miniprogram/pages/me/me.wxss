@@ -11,3 +11,8 @@
     width: 250rpx;
     height: 250rpx;
 }
+
+
+.contact-container{
+    margin-top: 10px;
+}

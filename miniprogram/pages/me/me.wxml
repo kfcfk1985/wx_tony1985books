@@ -8,17 +8,31 @@
                 {{userInfo.nickName}}
             </text>
         </view>
+
+        <view>
+            <button type="primary" 
+                    size="default" 
+                    bindtap="sacnAddBook">扫码添加书的信息</button>
+        </view>
     </view>
 
  
     <view class="unlog-container" wx:else>
        <image class="img-container" src="{{unLogImg}}" lazy-load="false" binderror="" bindload=""></image>
         <view>
-            <button class="default" 
-                    type="primary" 
-                    size="mini" 
+            <button type="primary" 
+                    size="default" 
                     open-type="getUserInfo"
                     bindgetuserinfo="handleGetuserinfo">登陆</button>
         </view>
     </view>
+
+
+    <view class="contact-container">
+        <button type="primary" 
+                size="default" 
+                open-type="contact"
+                bindcontact="handleContact">客服</button>
+    </view>
+    
 </view>

@@ -13,6 +13,9 @@ App({
         env: 'kfcfk1985-1gzt5yq98b147fd7',
         traceUser: true,
       })
+
+
+      
     }
 
     this.globalData = {}
